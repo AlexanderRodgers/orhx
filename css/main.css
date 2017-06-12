@@ -3,12 +3,19 @@
     src: url('../fonts/bebas_neue.otf');
 }
 
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
 #main-header {
     font-family: bn;
-    font-size: 3em;
+    font-size: 8em;
+    padding: 0;
+    color: blue;
 }
 
 p {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300
+    font-size: 1.5em;
 }
+
