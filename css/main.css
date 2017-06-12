@@ -1,0 +1,14 @@
+@font-face {
+    font-family: bn;
+    src: url('../fonts/bebas_neue.otf');
+}
+
+#main-header {
+    font-family: bn;
+    font-size: 3em;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300
+}
