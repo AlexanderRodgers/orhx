@@ -1,7 +1,6 @@
-@font-face {
-    font-family: bn;
-    src: url('../fonts/bebas_neue.otf');
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 
 html, body {
     margin: 0;
@@ -16,7 +15,7 @@ body {
 }
 
 #main-header {
-    font-family: bn;
+    font-family: 'Roboto', sans-serif;
     font-size: 8em;
     padding: 0;
     text-align: center;
