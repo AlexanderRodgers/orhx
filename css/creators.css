@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.main-display {
+.main-tiles {
     width: 100%;
     height 100%;
     font-family: 'Lato' sans-serif;
@@ -14,4 +14,10 @@
     text-align: center;
     display: inline-block;
 }
+
+#main-display-top {
+    float: left;
+}
+
+
 
