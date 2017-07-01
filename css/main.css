@@ -4,8 +4,26 @@
     outline: 0;
     color: blue;
     text-align: center;
+    text-transform: uppercase;
+}
+
+#navbar {
+    list-style: none;
+    text-transform: uppercase;
 }
 
 p {
     font-size: 1.5em;
+    text-align: center;
+}
+
+#footer {
+    padding: 4em 0 3em 0em;
+    font-family: 'Lato';
+}
+
+#contact-us {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-size: 2em;
 }
