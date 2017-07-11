@@ -1,10 +1,12 @@
 #main-header {
     font-family: 'Roboto', sans-serif;
+    display: block;
     font-size: 10em;
     outline: 0;
     color: blue;
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 0;
 }
 
 #navbar {
@@ -12,10 +14,14 @@
     text-transform: uppercase;
 }
 
+#header-intro {
+    padding: 0em 10em;
+}
+
 p {
     font-size: 1.5em;
     text-align: center;
-}
+} 
 
 #footer {
     padding: 4em 0 3em 0em;
