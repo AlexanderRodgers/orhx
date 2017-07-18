@@ -1,3 +1,9 @@
+.fullscreen-container {
+    text-align: center;
+    min-height: 100vh;
+    
+}
+
 #main-header {
     font-family: 'Roboto', sans-serif;
     display: block;
@@ -6,8 +12,10 @@
     color: blue;
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 0;
-    vertical-align: baseline;
+}
+
+.main {
+    vertical-align: middle;
 }
 
 #navbar {
