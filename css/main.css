@@ -53,6 +53,7 @@
 }
 
 #main-header {
+    padding-top: 1em;
     font-family: 'Roboto', sans-serif;
     display: block;
     font-size: 10em;
@@ -70,6 +71,37 @@
     list-style: none;
     text-transform: uppercase;
 }
+
+
+nav {
+    width: 100%;
+    padding: 20px 0; 
+    float: right;
+    background-color: #64b5f6;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+nav li {
+    padding: 0 1.4em;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
 
 #header-intro {
     padding: 0em 10em;
@@ -93,6 +125,40 @@ p {
     text-transform: capitalize;
     font-size: 2em;
 }
+
+.contact{
+    display: inline-block;
+    padding-left: 10px;
+    width: 45%;
+}
+
+.contact-form {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-submit {
+    vertical-align: baseline;
+    background-color: white;
+    padding: 20px 20px 20px 10px;
+    margin; 10px 10px;
+    box-sizing: border-box;
+}
+
+#name-submit {
+    margin-bottom: 1em;
+}
+
+#email-submit {
+    margin-bottom: 1em;
+}
+
+#info-submit {
+    margin-bottom: 1em;
+}
+
+
 
 /*FAQ*/
 .faq-header-bold {
