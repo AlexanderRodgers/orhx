@@ -2,8 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
 
-@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -122,6 +120,21 @@ p {
     vertical-align: baseline;
 }
 
+.footer > .inner {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
 #contact-us {
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
@@ -180,8 +193,12 @@ p {
 }
 
 .submit-button {
+    font-family: 'Lato', sans-serif;
+    content: 'Submit';
+    outline-color: white;
+    outline-width: thick;
     margin-top: 1em;
-    width: 160px;
+    width: 100%;
     height: 50px;
     background-color: tomato;
     position: relative;
@@ -192,27 +209,14 @@ p {
     cursor: pointer;
 }
 
-.submit-button:before {
-    content: 'Submit';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.follow {
+    padding: 0em 2em;
 }
 
-.submit-button:hover:before {
-    top: -30px;
+#follow-us {
+    font-size: 2em;
 }
 
-.submit-button:after {
-    transform: translate(-50%, -50%);
-    top: calc(100% + 100px);
-    font-family: 'Ionicons';
-    content: '\f38e';
-    position: relative;
-    top: 50%;
-    left: 50%;
-}
 
 /*FAQ*/
 .faq-header-bold {
