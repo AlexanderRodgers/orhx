@@ -221,7 +221,7 @@ p {
 /*FAQ*/
 .faq-header-bold {
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 100;
     font-size: 4em;
     align-content: center;
     text-align: center;
@@ -254,32 +254,51 @@ p {
     font-size: 4em;
     text-align: center;
 }
+$bg: rgba(0, 0, 0, 0.2);
 
-.creator-tiles {
-     width: 100%;
-    height 100%;
-    font-family: 'Lato' sans-serif;
-    padding: .5em .5em;
+.bg, .overlay {
     text-align: center;
 }
 
-.creator-job-title {
-    font-size: 2em;
+.img-circle, .overlay {
+    transition: .3s all;
 }
 
-.creator-name {
-    font-size: 1.5em;
+.bg {
+    max-width: 31%;
+    position: relative;
+    margin: .5%;
 }
 
-#main-display-top {
-    display: inline-block;
+.img-circle {
+    border-radius: 50%;
+    width: 90%;
+    margin-bottom: -4px;
 }
 
-#main-display-bottom {
-    display: inline-block;
-    padding: 0 3%;
+.overlay {
+    position: relative;
+    width: 100%;
+    background: $bg;
+    color: #fff;
+    opacity: 0;
+}
+
+.overlay > h2 {
+    padding-top: 20%;
+}
+
+.overlay:hover {
+    opacity: 1;
     
 }
+
+.img-circle:hover {
+    cursor: pointer;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
 
 /*Sponsors*/
 
