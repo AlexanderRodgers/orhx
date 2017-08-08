@@ -254,7 +254,25 @@ p {
     font-size: 4em;
     text-align: center;
 }
-$bg: rgba(0, 0, 0, 0.2);
+
+/* Cool Hover Effects */
+
+.header-creators, .header-creators:before, .header-creators:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.creator-tiles {
+    display: table;
+    width: 90vw;
+    float: center;
+    margin: 0 auto;
+}
 
 .bg, .overlay {
     text-align: center;
@@ -265,9 +283,76 @@ $bg: rgba(0, 0, 0, 0.2);
 }
 
 .bg {
-    max-width: 31%;
+    float: left;
+    max-width: 100%;
     position: relative;
     margin: .5%;
+}
+
+.bg .img-circle {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.bg .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    opacity: 0;
+}
+
+.bg .overlay h2 {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20%;
+    font-size: 2em;
+}
+
+.bg:hover .overlay {
+    opacity: 1;
+}
+
+.bg:hover .img-circle {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+$bg: rgba(0, 0, 0, 0.2);
+
+/* End of working hovers /*
+
+/*
+
+.img-circle, .overlay {
+    transition: .3s all;
+}
+
+.bg, .overlay {
+    text-align: center;
+}
+
+.bg {
+    max-width: 25%;
+    position: relative;
+    margin: .5%;
+}
+
+.bg, .img-circle {
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.bg, .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    opacity: 0;
 }
 
 .img-circle {
@@ -284,10 +369,6 @@ $bg: rgba(0, 0, 0, 0.2);
     opacity: 0;
 }
 
-.overlay > h2 {
-    padding-top: 20%;
-}
-
 .overlay:hover {
     opacity: 1;
     
@@ -299,6 +380,7 @@ $bg: rgba(0, 0, 0, 0.2);
     filter: blur(2px);
 }
 
+*/
 
 /*Sponsors*/
 
