@@ -268,10 +268,13 @@ p {
 }
 
 .creator-tiles {
-    display: table;
     width: 90vw;
     float: center;
     margin: 0 auto;
+}
+
+.overlay {
+    justify-content: center;
 }
 
 .bg, .overlay {
@@ -305,9 +308,18 @@ p {
 }
 
 .bg .overlay h2 {
+    transform: translate(0%, 45%);
     font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     padding-top: 20%;
     font-size: 2em;
+}
+
+.bg .overlay p {
+    transform: translate(0%, 65%);
+    padding-top: 1em;
+    font-weight: 900;
+    font-size: 1.5em;
 }
 
 .bg:hover .overlay {
