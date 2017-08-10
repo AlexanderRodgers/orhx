@@ -56,6 +56,7 @@
     padding-top: 1em;
     font-family: 'Roboto', sans-serif;
     display: block;
+    font-weight: 100;
     font-size: 10em;
     outline: 0;
     color: blue;
@@ -110,7 +111,28 @@ a:hover {
 p {
     font-size: 1.5em;
     text-align: center;
-} 
+}
+
+/* Index Sponsor List */
+.sponsor-header {
+    padding-top: .2em;
+    font-family: 'Roboto';
+    font-weight: 100;
+    align-content: center;
+    text-align: center;
+    font-size: 3em;
+}
+
+.sponsor-subheader {
+    font-family: 'Lato';
+    font-weight: 900;
+    padding-top: .7em;
+    
+}
+
+.sponsors-main {
+    overflow: hidden;
+}
 
 .footer {
     width: 100%;
@@ -138,7 +160,7 @@ p {
 #contact-us {
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 .contact {
@@ -214,7 +236,7 @@ p {
 }
 
 #follow-us {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 /* Sponsors */
@@ -293,6 +315,35 @@ p {
     vertical-align: middle;
 }
 
+.creator-broad {
+    padding-top: 2em;
+    justify-content: center;
+    float: right;
+    width: 45vw;
+}
+
+.creator-broad h3 {
+    font-size: 1.6em;
+    font-weight: 500;
+    
+}
+
+.github {
+    height: 10em;
+    width: 10em;
+    float: right;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.ig {
+    height: 10em;
+    width: 10em;
+    float: right;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
 #eva {
     border-top: thin;
     border-bottom: thin;
@@ -309,11 +360,11 @@ p {
 }
 
 #nathan {
-    float: right;
+    
 }
 
 #chris {
-    float: right;
+    
 }
 
 /*
@@ -363,14 +414,14 @@ p {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     padding-top: 20%;
-    font-size: 2.7em;
+    font-size: 3em;
 }
 
 .bg .overlay p {
     transform: translate(0%, 65%);
     padding-top: 1.3em;
     font-weight: 900;
-    font-size: 2em;
+    font-size: 2.3em;
 }
 
 .bg:hover .overlay {
