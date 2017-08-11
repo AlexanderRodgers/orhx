@@ -328,15 +328,7 @@ p {
     
 }
 
-.github {
-    height: 10em;
-    width: 10em;
-    float: right;
-    padding-right: 2em;
-    padding-bottom: 2em;
-}
-
-.ig {
+.media-logos {
     height: 10em;
     width: 10em;
     float: right;
@@ -436,3 +428,4 @@ p {
 
 
 $bg: rgba(0, 0, 0, 0.2);
+
