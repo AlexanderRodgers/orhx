@@ -425,7 +425,36 @@ p {
     filter: blur(2px);
 }
 
+/* Directions */
 
+.dir-div {
+    width: 90vw;
+    margin: 0 3em 0 3em;
+}
+
+.dir-div h2 {
+    font-weight: 100;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: thin;
+    border-color: rgba(119, 119, 119, .3);
+    border-style: solid;
+    
+}
+
+.intel {
+    padding-top: .3em;
+    padding-bottom: .3em;
+}
+
+.dir-div h4 {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: .2em;
+}
 
 $bg: rgba(0, 0, 0, 0.2);
 
