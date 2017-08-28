@@ -203,7 +203,7 @@ p {
 
 #message {
     width: 100%;
-    height: 5em;
+    height: 6em;
     font-size: 1.5em;
 }
 
@@ -232,8 +232,22 @@ p {
 }
 
 .follow {
+    width: 45vw;
     padding: 0em 2em;
 }
+
+.media-logos-index {
+    height: 7em;
+    width: 7m;
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+#twitter-index {
+    float: left;
+}
+
 
 #follow-us {
     font-size: 3em;
@@ -253,15 +267,16 @@ p {
 }
 
 .icons {
+    padding-top: 
     margin: 0 auto;
 }
 
 #github-index {
-    float: right;
+    float: left;
 }
 
 #ig-index {
-    float: right;
+    float: left;
 }
 
 /*FAQ*/
