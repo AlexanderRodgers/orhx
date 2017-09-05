@@ -1,0 +1,28 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 4em;
+    align-content: center;
+    text-align: center;
+    padding-bottom: .2em;
+    margin: 0;
+    
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding-bottom: .2em;
+    
+}
+
+p {
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding: .8em 1.5em;
+}
