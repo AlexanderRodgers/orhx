@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ORHX 2018</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="/public/css/main.css">
+    </head>
+    <body>
+        <div class="fullscreen-container">
+            
+            <div id="navbar" class="fullscreen">
+                <nav id="index-nav" class="index-nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="html/faq.html">FAQ</a></li>
+                        <!--<li><a href="#">SPONSORS</a></li>-->
+                        <li><a href="html/creators.html">CREATORS</a></li>
+                        <li><a href="html/sign-up.html">SIGN UP</a></li>
+                        <li><a href="html/dir.html">DIRECTIONS</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        
+            <div class="background-color">
+                <div class="blur"></div>
+            <div id="main" class="main">
+                <h1 id="main-header">ORHX 2018</h1>
+                    <p id="header-intro" class="main">A student led hackathon for the El Dorado School District<br/><br/>
+                    Take part in Oak Ridge High School's second hackathon located at the Intel Campus in Folsom, no prior computer science experience is necessary.
+                    </p>
+            </div>
+                </div>
+        </div>
+        
+        <!-- COMMENTING OUT UNTIL WE GET SPONSORS -->
+        <!--
+        <section class="sponsors-main">
+            <div id="sponsors" class="sponsors">
+                <h2 class="sponsor-header">Thanks to these Sponsors</h2>
+                <p class="sponsor-subheader">They help make this all possible.</p>
+                
+                <section class="tiles">
+            <article class="style1">
+                <span class="image">
+                    <img class="sponsor-tile" src="images/pic01.jpg" alt="" />
+                </span>
+            </article>
+            <article class="style2">
+                <span class="image">
+                    <img class="sponsor-tile" src="images/pic02.jpg" alt="" />
+                </span>
+    
+            </article>
+            <article class="style3">
+                <span class="image">
+                    <img class="sponsor-tile" src="images/pic03.jpg" alt="" />
+                </span>
+                
+            </article>
+            <article class="style4">
+                <span class="image">
+                    <img class="sponsor-tile" src="images/pic04.jpg" alt="" />
+                </span>
+               
+            </article>
+            <article class="style5">
+                <span class="image">
+                    <img class="sponsor-tile" src="images/pic05.jpg" alt="" />
+                </span>
+                
+            </article>
+            <article class="style6">
+                <span class="image">
+                    <img class="sponsor-tile" src="images/pic06.jpg" alt="" />
+                </span>
+               
+            </article>
+        </section>              
+            </div>
+        </section>
+        --> 
+        
+        <footer class="footer">
+            <div class="inner" id="inner">
+                <div class="contact">
+                    
+                    <h2 id="contact-us">Contact Us</h2>
+                        <h3>{{msg}}</h3>
+                        <form method="POST" id="contact-form" action="send" class="contact-form" method="post" action="#">
+                            <div id="name-submit" class="form-submit"><span>
+                                <input type="text" name="name" id="name" placeholder="Name" required></span>
+                            </div>
+                            <div id="email-submit" class="form-submit">
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                            </div>
+                            <div id="info-submit" class="form-submit">
+                                <textarea name="message" id="message" placeholder="Any bugs, spelling errors, questions, or comments" required></textarea>
+                            </div>
+                            <div id="contact-button" class="contact-button">
+                                <button class="submit-button" type="submit">Submit</button>
+                            </div>
+                        </form>
+                </div>
+                <section class="follow">
+                    <h2 id="follow-us">Follow Us</h2>
+                        <ul class="icons">
+                            <li id="twitter-index"><a href="#"><img src="/public/images/twitter.png" alt="Twitter" class="media-logos-index"></a></li>
+                            <li id="github-index"><a href="#"><img src="/public/images/GitHub-Mark-120px-plus.png" class="media-logos-index" alt="Github"></a></li>
+                            <li id="ig-index"><a href="#"><img src="/public/images/ig-logo.png" class="media-logos-index" alt="Instagram"></a></li>
+                            <li id="fb-logo"><a href="#"><img src="/public/images/fb-blue.png" class="media-logos-index" alt="Facebook"></a></li>
+                        </ul>
+                </section>
+            </div>
+        </footer>
+        
+        <script src="js/mail_server.js"></script>
+    </body>
+
+</html>
