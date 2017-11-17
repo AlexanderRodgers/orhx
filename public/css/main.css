@@ -307,6 +307,9 @@ p {
 }
 
 /*FAQ*/
+
+
+
 .faq-header-bold {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -344,6 +347,8 @@ p {
     font-size: 1.5em;
     padding: .8em 1.5em;
 }
+
+
 
 /*Creators*/
 
@@ -395,9 +400,8 @@ p {
 }
 
 .media-logos {
-    height: 10em;
-    width: 10em;
-    float: right;
+    height: 3em;
+    width: 3em;
     padding-right: 2em;
     padding-bottom: 2em;
 }
@@ -425,14 +429,6 @@ p {
     
 }
 
-/*
-.creator-tiles {
-    width: 90vw;
-    float: center;
-    margin: 0 auto;
-}
-*/
-
 .overlay {
     justify-content: center;
 }
@@ -447,7 +443,7 @@ p {
 }
 
 .bg {
-    width: 35vw;
+    width: 20vw;
     position: relative;
     margin: .5%;
 }
@@ -472,14 +468,14 @@ p {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     padding-top: 20%;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .bg .overlay p {
-    transform: translate(0%, 65%);
+    transform: translate(0%, 60%);
     padding-top: 1.3em;
     font-weight: 900;
-    font-size: 2.3em;
+    font-size: 1.5em;
 }
 
 .bg:hover .overlay {
@@ -489,6 +485,10 @@ p {
 .bg:hover .img-circle {
     -webkit-filter: blur(2px);
     filter: blur(2px);
+}
+
+.bg .overlay .overlay-text {
+       
 }
 
 /* Sign up */
