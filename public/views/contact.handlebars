@@ -19,6 +19,7 @@
                         <li><a href="html/dir.html">DIRECTIONS</a></li>
                     </ul>
                 </nav>
+                <div class="emailFinish" onclick="{{xable}}"><span>X</span><h3>{{msg}}</h3></div>
             </div>
 
         
@@ -85,9 +86,8 @@
         <footer class="footer">
             <div class="inner" id="inner">
                 <div class="contact">
-                    
                     <h2 id="contact-us">Contact Us</h2>
-                        <h3>{{msg}}</h3>
+                        
                         <form method="POST" id="contact-form" action="send" class="contact-form" method="post" action="#">
                             <div id="name-submit" class="form-submit"><span>
                                 <input type="text" name="name" id="name" placeholder="Name" required></span>

@@ -45,7 +45,13 @@ app.post('/send', (req, res) => {
     }
 });
 
-
+Handlebars.registerHelper('xable', function() {
+    
+    text = "this.parentElement.style.display='none'";
+    console.log(text);
+    
+    return new Handlebars.SafeString(text);
+});
 
 let helperOptions = {
     from: '<' + email + '>',
@@ -63,7 +69,7 @@ let helperOptions = {
     }
         
         
-    res.render('contact', {msg: 'email has been sent'});
+    res.render('emailFinish', {msg: 'email has been sent'});
 });
     
 })
