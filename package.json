@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A website created for Oak Ridge's 2018 hackathon",
   "main": "mail.js",
+  "scripts": {
+  "start": "node /orhx/public/mail.js"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
