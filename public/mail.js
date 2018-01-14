@@ -20,9 +20,23 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.urlencoded( {extended: false}));
 app.use(bodyParser.json());
 
+
 app.get('/', (req, res) => {
     res.render('contact');
 });
+
+//in progrss
+
+app.all('*', function(req, res) {
+    throw new Error("Bad request")
+});
+
+app.use(function(e, req, res, next) {
+    if (e.message === "Bad request") {
+        res.status(404).sendFile(__dirname + '/html/error.html');
+    }
+});
+//in progress
 
 app.post('/send', (req, res) => {
     console.log(req.body);
@@ -45,18 +59,10 @@ app.post('/send', (req, res) => {
     }
 });
 
-Handlebars.registerHelper('xable', function() {
-    
-    text = "this.parentElement.style.display='none'";
-    console.log(text);
-    
-    return new Handlebars.SafeString(text);
-});
-
 let helperOptions = {
     from: '<' + email + '>',
     to: 'rodg6714@eduhsd.k12.ca.us',
-    subject: name + ' User Submission',
+    subject: name + ': User Submission',
     text: message
 };
 
@@ -69,7 +75,7 @@ let helperOptions = {
     }
         
         
-    res.render('emailFinish', {msg: 'email has been sent'});
+    res.render('contact', {msg: 'email has been sent'});
 });
     
 })

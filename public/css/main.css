@@ -135,6 +135,7 @@ a:hover {
 
 #header-intro {
     padding: 0em 10em;
+    color: white;
 }
 
 p {
@@ -373,7 +374,8 @@ p {
     font-weight: 400;
     font-size: 2em;
     text-align: center;
-    margin: 0;
+    margin-left: 3em;
+    margin-right: 3em;
     padding-bottom: .2em;
 }
 
@@ -382,6 +384,8 @@ p {
     font-weight: 400;
     font-size: 1.5em;
     padding: .8em 1.5em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 
