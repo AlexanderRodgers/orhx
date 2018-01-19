@@ -187,6 +187,48 @@ p {
     flex-direction: row;
 }
 
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
 #contact-us {
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
@@ -582,8 +624,9 @@ iframe {
 #splash-container {
     width: 90vw;
     justify-content: center;
-    height: 60vh;
-    margin: 0 auto;
+    height: 35vh;
+    margin: 0 0 3em 0;
+    padding: 0 0 0 0;
     display: table;
 }
 
@@ -594,11 +637,12 @@ iframe {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 4em;
+    padding-bottom: 0;
     align-content: center;
     text-align: center;
-    padding-bottom: .2em;
     margin: 0;
     width: 90vw;
+    height: 50vh;
     margin: 0 auto;
     border-top: thin;
     border-bottom: thin;
@@ -606,8 +650,27 @@ iframe {
     border-style: solid;
 }
 
+#splash-main {
+    text-align: center;
+    align-content: center;
+}
+
 #splash-message {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 3em;
-}}
+    text-align: center;
+}
+
+/* Error */
+.error-all {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+}
+
+#error-message {
+    font-size: 5em;
+}
+

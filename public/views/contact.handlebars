@@ -81,7 +81,6 @@
         </section>
         -->
         
-        
         <footer class="footer">
             <div class="inner" id="inner">
                 <div class="contact">
@@ -98,12 +97,11 @@
                                 <textarea name="message" id="message" placeholder="Any bugs, spelling errors, questions, or comments" required></textarea>
                             </div>
                             <div id="contact-button" class="contact-button">
-                                <button class="submit-button" type="submit">Submit</button>
+                                <button class="submit-button" type="submit" onclick="validateForm()">Submit</button>
                             </div>
                         </form>
                 </div>
                 <section class="follow">
-                    <h3>{{msg}}</h3>
                     <h2 id="follow-us">Follow Us</h2>
                         <ul class="icons">
                             <li id="twitter-index"><a href="https://twitter.com/OakRidgeHacks"><img src="/public/images/twitter.png" alt="Twitter" class="media-logos-index"></a></li>
@@ -113,9 +111,27 @@
                         </ul>
                 </section>
             </div>
+            <div id="snackbar">Your email has been sent.</div>
         </footer>
-        
-        <script src="js/mail_server.js"></script>
+        <script>
+            function validateForm() {
+                if(document.getElementById("name").value == ""
+                  || document.getElementById("email").value == ""
+                  || document.getElementById("message").value == "") {
+                   }
+                else {
+                    setTimeout(messageSent, 750);
+                }
+            }
+        </script>
+        <script>
+    function messageSent() {
+    var x = document.getElementById("snackbar")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+        <script src="js/mail.js"></script>
     </body>
 
 </html>

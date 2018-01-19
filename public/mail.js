@@ -25,19 +25,6 @@ app.get('/', (req, res) => {
     res.render('contact');
 });
 
-//in progrss
-
-app.all('*', function(req, res) {
-    throw new Error("Bad request")
-});
-
-app.use(function(e, req, res, next) {
-    if (e.message === "Bad request") {
-        res.status(404).sendFile(__dirname + '/html/error.html');
-    }
-});
-//in progress
-
 app.post('/send', (req, res) => {
     console.log(req.body);
     
@@ -73,11 +60,26 @@ let helperOptions = {
         console.log("The message was sent.");
         console.log(info);
     }
-        
-        
-    res.render('contact', {msg: 'email has been sent'});
+    
+    res.render('contact');
 });
     
 })
 
-app.listen(3000, () => console.log('Server started...'));
+//in progrss
+
+app.all('*', function(req, res) {
+    throw new Error("Bad request")
+});
+
+app.use(function(e, req, res, next) {
+    if (e.message === "Bad request") {
+        res.status(404).sendFile(__dirname + '/html/error.html');
+    }
+});
+
+//in progress
+
+
+
+app.listen(80, () => console.log('Server started...'));
