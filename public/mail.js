@@ -30,7 +30,8 @@ app.post('/send', (req, res) => {
     
     var name = req.body.name;
     var email = req.body.email;
-    var message = req.body.message;
+    var message = req.body.message + ' /nFrom: ' + email;
+    console.log(message);
     
     let transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -47,7 +48,7 @@ app.post('/send', (req, res) => {
 });
 
 let helperOptions = {
-    from: '<' + email + '>',
+    replyTo: email,
     to: 'rodg6714@eduhsd.k12.ca.us',
     subject: name + ': User Submission',
     text: message
@@ -82,4 +83,4 @@ app.use(function(e, req, res, next) {
 
 
 
-app.listen(80, () => console.log('Server started...'));
+app.listen(3000, () => console.log('Server started...'));

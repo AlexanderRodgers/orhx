@@ -387,7 +387,17 @@ p {
 
 /*FAQ*/
 
+.faq-columns {
+    column-count: 2;
+    column-rule-style: dashed;
+    column-rule-width: thin;
+}
 
+.q-and-a {
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
 
 .faq-header-bold {
     font-family: 'Roboto', sans-serif;
@@ -429,8 +439,6 @@ p {
     margin-left: 3em;
     margin-right: 3em;
 }
-
-
 
 /*Creators*/
 
